@@ -1,4 +1,5 @@
-// build.sbt
-scalaVersion := "2.12.6"
+name := "ScalaWork"
 
-scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Xlint")
+version := "0.1"
+
+scalaVersion := "2.12.6"
