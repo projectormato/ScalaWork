@@ -1,19 +1,13 @@
-//object p2{
-//  def a(): Unit ={
-//    println("hello")
-//  }
-//  def main(args: Array[String]): Unit = {
-//    a()
-//  }
-//}
-
-object p2 {
-  def main(args: Array[String]) :Unit = {
-    var ans = 0
-    for (i <- 0 until 1000) {
-      if (i % 3 == 0 || i % 5 == 0) {
-        ans += i
-      }
+object p2{
+  def main(args: Array[String]): Unit = {
+    var arr = Array(1, 2)
+    var sum = 0; var ans = 2; var i = 0
+    while (4000000 > sum){
+      sum = arr(0) + arr(1)
+      if (sum % 2 ==0 && 4000000 > sum) ans += sum
+      println(sum)
+      arr(i%2) = sum
+      i += 1
     }
     println(ans)
   }
