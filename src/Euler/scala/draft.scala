@@ -5,5 +5,6 @@ object draft {
     val s = i.toString
     println(s.substring(0, s.length/2))
     println(s.substring(ceil(s.length/2.0).toInt, s.length))
+    println(max(10,50))
   }
 }
