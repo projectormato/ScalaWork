@@ -5,6 +5,6 @@ object p35 extends App {
     else
       xs.head :: sieve(xs.tail.filter(_ % xs.head != 0))
 
-  val primeList = sieve(Range(2, 1000).toList)
+  val primeList = sieve(Range(2, 10000).toList)
   println(primeList)
 }
