@@ -7,7 +7,7 @@ object p42 extends App {
     sankaku = sankaku :+ ((i+1)*i)/2
   }
   println(sankaku)
-  
+
   val source = Source.fromFile("./Euler/src/scala/words.txt", "UTF-8")
   var res = 0
   source.getLines.foreach{ line =>
